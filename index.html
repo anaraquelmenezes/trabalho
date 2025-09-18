@@ -37,8 +37,9 @@
     }
     .projects {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(3, 1fr); /* sempre 3 colunas */
       gap: 1.5rem;
+      justify-items: center;
     }
     .card {
       background: white;
@@ -46,88 +47,10 @@
       border-radius: 8px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       transition: transform 0.2s;
+      width: 90%;
+      max-width: 300px;
     }
     .card:hover {
       transform: translateY(-5px);
     }
-    .card h3 {
-      margin-top: 0;
-      font-family: 'Merriweather', serif;
-    }
-    .card p {
-      font-size: 0.95rem;
-    }
-    .card a {
-      display: inline-block;
-      margin-top: 1rem;
-      text-decoration: none;
-      color: #2980B9;
-      font-weight: bold;
-    }
-    .card a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      background-color: #2C3E50;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-    footer a {
-      color: #2980B9;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    footer a:hover {
-      text-decoration: underline;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Portfólio de Ana Raquel Menezes</h1>
-    <p>Bem-vindo(a)! Aqui compartilho meus dashboards e projetos de análise de dados.</p>
-  </header>
-
-  <div class="container">
-    <h2>Projetos</h2>
-    <div class="projects">
-      <div class="card">
-        <h3>Dashboard 1</h3>
-        <p>Análise de vendas e performance.</p>
-        <a href="link-do-dashboard-1" target="_blank">Ver projeto</a>
-      </div>
-      <div class="card">
-        <h3>Dashboard 2</h3>
-        <p>Exploração de dados financeiros.</p>
-        <a href="link-do-dashboard-2" target="_blank">Ver projeto</a>
-      </div>
-      <div class="card">
-        <h3>Dashboard 3</h3>
-        <p>Insights sobre clientes e marketing.</p>
-        <a href="link-do-dashboard-3" target="_blank">Ver projeto</a>
-      </div>
-      <div class="card">
-        <h3>Dashboard 4</h3>
-        <p>Monitoramento de KPIs em tempo real.</p>
-        <a href="link-do-dashboard-4" target="_blank">Ver projeto</a>
-      </div>
-      <div class="card">
-        <h3>Dashboard 5</h3>
-        <p>Previsões e séries temporais.</p>
-        <a href="link-do-dashboard-5" target="_blank">Ver projeto</a>
-      </div>
-      <div class="card">
-        <h3>Dashboard 6</h3>
-        <p>Relatórios interativos de RH.</p>
-        <a href="link-do-dashboard-6" target="_blank">Ver projeto</a>
-      </div>
-    </div>
-  </div>
-
-  <footer>
-    <p>© 2025 Ana Raquel Menezes | <a href="https://www.linkedin.com/in/ana-raquel-menezes" target="_blank">LinkedIn</a></p>
-  </footer>
-</body>
-</html>
+    .c
