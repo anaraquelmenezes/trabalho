@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio - Ana Raquel Menezes</title>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Merriweather:wght@700&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Lato', sans-serif;
@@ -16,75 +16,136 @@
     header {
       background-color: #2C3E50;
       color: white;
-      padding: 2rem;
+      padding: 20px;
       text-align: center;
+      font-family: 'Merriweather', serif;
     }
     header h1 {
       margin: 0;
-      font-family: 'Merriweather', serif;
     }
-    header p {
-      margin-top: 0.5rem;
+    nav {
+      margin-top: 10px;
     }
-    main {
-      padding: 2rem;
-    }
-    h2 {
-      text-align: center;
-      font-family: 'Merriweather', serif;
-      margin-bottom: 2rem;
-    }
-    .card-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    .card {
-      background: white;
-      padding: 1.5rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      text-align: center;
-      transition: transform 0.2s;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-    }
-    .card img {
-      width: 100%;
-      height: 180px; /* tamanho fixo para todas */
-      object-fit: cover; /* mantém proporção e corta excesso */
-      border-radius: 8px;
-      margin-bottom: 1rem;
-    }
-    .card h3 {
-      font-family: 'Merriweather', serif;
-      margin-bottom: 0.5rem;
-    }
-    .card p {
-      margin-bottom: 1rem;
-    }
-    .card a {
-      color: #2980B9;
+    nav a {
+      color: white;
+      margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
     }
-    .card a:hover {
-      text-decoration: underline;
+    nav a:hover {
+      color: #2980B9;
     }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 30px auto;
+    }
+    h2 {
+      font-family: 'Merriweather', serif;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    /* Sobre mim */
+    #sobre {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    #sobre img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    #sobre div {
+      flex: 1;
+    }
+    /* Projetos */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .card h3 {
+      margin: 10px 0;
+      font-family: 'Merriweather', serif;
+    }
+    .card a {
+      display: inline-block;
+      margin-top: 10px;
+      color: white;
+      background-color: #2980B9;
+      padding: 8px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .card a:hover {
+      background-color: #1A5276;
+    }
+    /* Formulário */
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      max-width: 600px;
+      margin: auto;
+    }
+    form label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-family: 'Lato', sans-serif;
+    }
+    form button {
+      margin-top: 15px;
+      background-color: #2980B9;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: #1A5276;
+    }
+    /* Rodapé */
     footer {
       background-color: #2C3E50;
       color: white;
       text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
+      padding: 15px;
+      margin-top: 30px;
     }
     footer a {
       color: #2980B9;
       text-decoration: none;
-      margin-left: 5px;
+      font-weight: bold;
     }
     footer a:hover {
       text-decoration: underline;
@@ -93,38 +154,96 @@
 </head>
 <body>
   <header>
-    <h1>Portfólio de Ana Raquel Menezes</h1>
-    <p>Bem-vindo(a)! Aqui compartilho meus dashboards e projetos de análise de dados.</p>
+    <h1>Ana Raquel Menezes</h1>
+    <nav>
+      <a href="#sobre">Sobre mim</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
   </header>
 
-  <main>
-    <h2>Projetos</h2>
-    <div class="card-container">
+  <section id="sobre" class="container">
+    <img src="imagens/foto.jpg" alt="Foto de Ana Raquel Menezes">
+    <div>
+      <h2>Sobre mim</h2>
+      <p>Sou casada, mãe de cinco filhos e avó de quatro netinhos lindos, e acredito que o aprendizado constante é uma das minhas maiores forças.  
+      Tenho paixão pelo poder que o Excel oferece para transformar dados em análises estratégicas, capazes de apoiar decisões com clareza e eficiência.  
+      Neste portfólio, compartilho projetos que refletem minha dedicação e curiosidade em análise de dados.  
+      Além de apresentar meu trabalho, meu objetivo é também entregar soluções personalizadas e de qualidade para empresas e profissionais que buscam dashboards e relatórios sob medida.</p>
+    </div>
+  </section>
+
+  <section id="projetos" class="container">
+    <h2>Meus Projetos</h2>
+    <div class="cards">
       <div class="card">
-        <img src="imagens/streaming.jpg" alt="Análise de Streaming">
-        <h3>Análise de Streaming</h3>
-        <p>Dashboard sobre desempenho e engajamento em plataformas de streaming.</p>
+        <img src="imagens/projeto1.jpg" alt="Projeto 1">
+        <h3>Dashboard Vendas</h3>
         <a href="#">Ver projeto</a>
       </div>
       <div class="card">
-        <img src="imagens/financeiro.jpg" alt="Controle Financeiro">
-        <h3>Controle Financeiro</h3>
-        <p>Exploração de dados financeiros e organização de despesas.</p>
+        <img src="imagens/projeto2.jpg" alt="Projeto 2">
+        <h3>Relatório Financeiro</h3>
         <a href="#">Ver projeto</a>
       </div>
       <div class="card">
-        <img src="imagens/dre.jpg" alt="DRE">
-        <h3>DRE</h3>
-        <p>Relatório de Demonstração de Resultados consolidado.</p>
+        <img src="imagens/projeto3.jpg" alt="Projeto 3">
+        <h3>Streaming Dados</h3>
         <a href="#">Ver projeto</a>
       </div>
     </div>
-  </main>
+  </section>
+
+  <section id="contato" class="container">
+    <h2>Entre em Contato</h2>
+    <form id="contact-form" action="https://formspree.io/f/mzzalwby" method="POST">
+      <label for="name">Nome</label>
+      <input type="text" id="name" name="name" placeholder="Seu nome" required>
+
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+
+      <label for="message">Mensagem</label>
+      <textarea id="message" name="message" placeholder="Escreva sua mensagem" rows="5" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+    <p id="form-status" style="margin-top:10px; color:green; display:none;">
+      ✅ Sua mensagem foi enviada com sucesso!
+    </p>
+  </section>
 
   <footer>
-    <p>© 2025 Ana Raquel Menezes | 
-      <a href="https://www.linkedin.com/in/ana-raquel-menezes" target="_blank">LinkedIn</a>
-    </p>
+    <p>© 2025 Ana Raquel Menezes | <a href="https://www.linkedin.com/in/ana-raquel-menezes" target="_blank">LinkedIn</a></p>
   </footer>
+
+  <script>
+    const form = document.getElementById("contact-form");
+    const status = document.getElementById("form-status");
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const data = new FormData(form);
+      try {
+        const response = await fetch(form.action, {
+          method: form.method,
+          body: data,
+          headers: { 'Accept': 'application/json' }
+        });
+        if (response.ok) {
+          status.style.display = "block";
+          form.reset();
+        } else {
+          status.textContent = "⚠️ Ocorreu um erro ao enviar. Tente novamente.";
+          status.style.color = "red";
+          status.style.display = "block";
+        }
+      } catch (error) {
+        status.textContent = "⚠️ Erro de conexão. Tente novamente.";
+        status.style.color = "red";
+        status.style.display = "block";
+      }
+    });
+  </script>
 </body>
 </html>
