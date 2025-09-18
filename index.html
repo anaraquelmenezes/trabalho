@@ -1,20 +1,166 @@
-<div class="projects">
-  <div class="card">
-    <img src="imagens/Análise de Streaming.jpg" alt="Análise de Streaming" class="card-img">
-    <h3>Análise de Streaming</h3>
-    <p>Dashboard sobre desempenho e engajamento em plataformas de streaming.</p>
-    <a href="link-do-dashboard-1" target="_blank">Ver projeto</a>
-  </div>
-  <div class="card">
-    <img src="imagens/Controle Financeiro.jpg" alt="Controle Financeiro" class="card-img">
-    <h3>Controle Financeiro</h3>
-    <p>Exploração de dados financeiros e organização de despesas.</p>
-    <a href="link-do-dashboard-2" target="_blank">Ver projeto</a>
-  </div>
-  <div class="card">
-    <img src="imagens/DRE.jpg" alt="DRE" class="card-img">
-    <h3>DRE</h3>
-    <p>Relatório de Demonstração de Resultados consolidado.</p>
-    <a href="link-do-dashboard-3" target="_blank">Ver projeto</a>
-  </div>
-</div>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Ana Raquel Menezes</title>
+
+  <!-- Importando fontes -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Lato', sans-serif;
+      background-color: #ECF0F1; /* fundo cinza claro */
+      color: #2C3E50; /* azul grafite */
+      line-height: 1.6;
+    }
+
+    header {
+      background: #2C3E50; /* azul grafite */
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-family: 'Merriweather', serif;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    h2 {
+      font-family: 'Merriweather', serif;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    /* Grid de cards */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card-img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .card h3 {
+      font-family: 'Merriweather', serif;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .card a {
+      display: inline-block;
+      text-decoration: none;
+      color: #2980B9; /* azul elegante */
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .card a:hover {
+      color: #1f6391;
+    }
+
+    footer {
+      background: #2C3E50; /* azul grafite */
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    footer a {
+      color: #2980B9; /* azul elegante */
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Portfólio de Ana Raquel Menezes</h1>
+    <p>Bem-vindo(a)! Aqui compartilho meus dashboards e projetos de análise de dados.</p>
+  </header>
+
+  <main>
+    <h2>Projetos</h2>
+    <div class="projects">
+      
+      <!-- Card 1 -->
+      <div class="card">
+        <img src="imagens/streaming.jpg" alt="Análise de Streaming" class="card-img">
+        <h3>Análise de Streaming</h3>
+        <p>Dashboard sobre desempenho e engajamento em plataformas de streaming.</p>
+        <a href="link-do-dashboard-1" target="_blank">Ver projeto</a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+        <img src="imagens/financeiro.jpg" alt="Controle Financeiro" class="card-img">
+        <h3>Controle Financeiro</h3>
+        <p>Exploração de dados financeiros e organização de despesas.</p>
+        <a href="link-do-dashboard-2" target="_blank">Ver projeto</a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+        <img src="imagens/dre.jpg" alt="DRE" class="card-img">
+        <h3>DRE</h3>
+        <p>Relatório de Demonstração de Resultados consolidado.</p>
+        <a href="link-do-dashboard-3" target="_blank">Ver projeto</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Ana Raquel Menezes | 
+      <a href="https://www.linkedin.com/in/ana-raquel-menezes" target="_blank">LinkedIn</a>
+    </p>
+  </footer>
+</body>
+</html>
