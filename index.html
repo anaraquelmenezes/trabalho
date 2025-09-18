@@ -1,121 +1,91 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio - Ana Raquel Menezes</title>
-
-  <!-- Importando fontes -->
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
-
   <style>
-    /* Reset básico */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
       font-family: 'Lato', sans-serif;
-      background-color: #ECF0F1; /* fundo cinza claro */
-      color: #2C3E50; /* azul grafite */
-      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #ECF0F1;
+      color: #2C3E50;
     }
-
     header {
-      background: #2C3E50; /* azul grafite */
-      color: #fff;
+      background-color: #2C3E50;
+      color: white;
       padding: 2rem;
       text-align: center;
     }
-
     header h1 {
+      margin: 0;
       font-family: 'Merriweather', serif;
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
     }
-
     header p {
-      font-size: 1.2rem;
+      margin-top: 0.5rem;
     }
-
     main {
       padding: 2rem;
     }
-
     h2 {
-      font-family: 'Merriweather', serif;
       text-align: center;
+      font-family: 'Merriweather', serif;
       margin-bottom: 2rem;
     }
-
-    /* Grid de cards */
-    .projects {
+    .card-container {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 2rem;
       max-width: 1200px;
       margin: 0 auto;
     }
-
     .card {
-      background: #fff;
-      border-radius: 10px;
+      background: white;
       padding: 1.5rem;
+      border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       text-align: center;
-      transition: transform 0.3s ease;
+      transition: transform 0.2s;
     }
-
     .card:hover {
       transform: translateY(-5px);
     }
-
-    .card-img {
+    .card img {
       width: 100%;
-      height: 200px;   /* fixa altura para manter padrão */
-      object-fit: cover; /* recorta sem distorcer */
+      height: 180px; /* tamanho fixo para todas */
+      object-fit: cover; /* mantém proporção e corta excesso */
       border-radius: 8px;
       margin-bottom: 1rem;
     }
-
     .card h3 {
       font-family: 'Merriweather', serif;
       margin-bottom: 0.5rem;
     }
-
     .card p {
-      font-size: 1rem;
       margin-bottom: 1rem;
     }
-
     .card a {
-      display: inline-block;
+      color: #2980B9;
       text-decoration: none;
-      color: #2980B9; /* azul elegante */
       font-weight: bold;
-      transition: color 0.3s;
     }
-
     .card a:hover {
-      color: #1f6391;
+      text-decoration: underline;
     }
-
     footer {
-      background: #2C3E50; /* azul grafite */
-      color: #fff;
+      background-color: #2C3E50;
+      color: white;
       text-align: center;
       padding: 1rem;
       margin-top: 2rem;
     }
-
     footer a {
-      color: #2980B9; /* azul elegante */
+      color: #2980B9;
       text-decoration: none;
-      font-weight: bold;
+      margin-left: 5px;
     }
-
     footer a:hover {
       text-decoration: underline;
     }
@@ -129,32 +99,25 @@
 
   <main>
     <h2>Projetos</h2>
-    <div class="projects">
-      
-      <!-- Card 1 -->
+    <div class="card-container">
       <div class="card">
-        <img src="imagens/streaming.jpg" alt="Análise de Streaming" class="card-img">
+        <img src="imagens/streaming.jpg" alt="Análise de Streaming">
         <h3>Análise de Streaming</h3>
         <p>Dashboard sobre desempenho e engajamento em plataformas de streaming.</p>
-        <a href="link-do-dashboard-1" target="_blank">Ver projeto</a>
+        <a href="#">Ver projeto</a>
       </div>
-
-      <!-- Card 2 -->
       <div class="card">
-        <img src="imagens/financeiro.jpg" alt="Controle Financeiro" class="card-img">
+        <img src="imagens/financeiro.jpg" alt="Controle Financeiro">
         <h3>Controle Financeiro</h3>
         <p>Exploração de dados financeiros e organização de despesas.</p>
-        <a href="link-do-dashboard-2" target="_blank">Ver projeto</a>
+        <a href="#">Ver projeto</a>
       </div>
-
-      <!-- Card 3 -->
       <div class="card">
-        <img src="imagens/dre.jpg" alt="DRE" class="card-img">
+        <img src="imagens/dre.jpg" alt="DRE">
         <h3>DRE</h3>
         <p>Relatório de Demonstração de Resultados consolidado.</p>
-        <a href="link-do-dashboard-3" target="_blank">Ver projeto</a>
+        <a href="#">Ver projeto</a>
       </div>
-
     </div>
   </main>
 
