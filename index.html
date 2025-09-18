@@ -53,4 +53,79 @@
     .card:hover {
       transform: translateY(-5px);
     }
-    .c
+    .card h3 {
+      margin-top: 0;
+      font-family: 'Merriweather', serif;
+    }
+    .card p {
+      font-size: 0.95rem;
+    }
+    .card a {
+      display: inline-block;
+      margin-top: 1rem;
+      text-decoration: none;
+      color: #2980B9;
+      font-weight: bold;
+    }
+    .card a:hover {
+      text-decoration: underline;
+    }
+    .card-img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 1rem;
+    }
+    footer {
+      background-color: #2C3E50;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    footer a {
+      color: #2980B9;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Portfólio de Ana Raquel Menezes</h1>
+    <p>Bem-vindo(a)! Aqui compartilho meus dashboards e projetos de análise de dados.</p>
+  </header>
+
+  <div class="container">
+    <h2>Projetos</h2>
+    <div class="projects">
+      <div class="card">
+        <img src="imagens/dashboard1.png" alt="Dashboard 1" class="card-img">
+        <h3>Dashboard 1</h3>
+        <p>Análise de vendas e performance.</p>
+        <a href="link-do-dashboard-1" target="_blank">Ver projeto</a>
+      </div>
+      <div class="card">
+        <img src="imagens/dashboard2.png" alt="Dashboard 2" class="card-img">
+        <h3>Dashboard 2</h3>
+        <p>Exploração de dados financeiros.</p>
+        <a href="link-do-dashboard-2" target="_blank">Ver projeto</a>
+      </div>
+      <div class="card">
+        <img src="imagens/dashboard3.png" alt="Dashboard 3" class="card-img">
+        <h3>Dashboard 3</h3>
+        <p>Insights sobre clientes e marketing.</p>
+        <a href="link-do-dashboard-3" target="_blank">Ver projeto</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Ana Raquel Menezes | <a href="https://www.linkedin.com/in/ana-raquel-menezes" target="_blank">LinkedIn</a></p>
+  </footer>
+</body>
+</html>
