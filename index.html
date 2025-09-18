@@ -1,131 +1,20 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio - Ana Raquel Menezes</title>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Lato', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #ECF0F1;
-      color: #2C3E50;
-    }
-    header {
-      background-color: #2C3E50;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-    header h1 {
-      font-family: 'Merriweather', serif;
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    header p {
-      font-size: 1.2rem;
-    }
-    .container {
-      padding: 2rem;
-      text-align: center;
-    }
-    h2 {
-      font-family: 'Merriweather', serif;
-      margin-bottom: 1.5rem;
-    }
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr); /* sempre 3 colunas */
-      gap: 1.5rem;
-      justify-items: center;
-    }
-    .card {
-      background: white;
-      padding: 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      transition: transform 0.2s;
-      width: 90%;
-      max-width: 300px;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-    }
-    .card h3 {
-      margin-top: 0;
-      font-family: 'Merriweather', serif;
-    }
-    .card p {
-      font-size: 0.95rem;
-    }
-    .card a {
-      display: inline-block;
-      margin-top: 1rem;
-      text-decoration: none;
-      color: #2980B9;
-      font-weight: bold;
-    }
-    .card a:hover {
-      text-decoration: underline;
-    }
-    .card-img {
-      width: 100%;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 6px;
-      margin-bottom: 1rem;
-    }
-    footer {
-      background-color: #2C3E50;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-    footer a {
-      color: #2980B9;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    footer a:hover {
-      text-decoration: underline;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Portfólio de Ana Raquel Menezes</h1>
-    <p>Bem-vindo(a)! Aqui compartilho meus dashboards e projetos de análise de dados.</p>
-  </header>
-
-  <div class="container">
-    <h2>Projetos</h2>
-    <div class="projects">
-      <div class="card">
-        <img src="imagens/dashboard1.png" alt="Dashboard 1" class="card-img">
-        <h3>Dashboard 1</h3>
-        <p>Análise de vendas e performance.</p>
-        <a href="link-do-dashboard-1" target="_blank">Ver projeto</a>
-      </div>
-      <div class="card">
-        <img src="imagens/dashboard2.png" alt="Dashboard 2" class="card-img">
-        <h3>Dashboard 2</h3>
-        <p>Exploração de dados financeiros.</p>
-        <a href="link-do-dashboard-2" target="_blank">Ver projeto</a>
-      </div>
-      <div class="card">
-        <img src="imagens/dashboard3.png" alt="Dashboard 3" class="card-img">
-        <h3>Dashboard 3</h3>
-        <p>Insights sobre clientes e marketing.</p>
-        <a href="link-do-dashboard-3" target="_blank">Ver projeto</a>
-      </div>
-    </div>
+<div class="projects">
+  <div class="card">
+    <img src="imagens/Análise de Streaming.jpg" alt="Análise de Streaming" class="card-img">
+    <h3>Análise de Streaming</h3>
+    <p>Dashboard sobre desempenho e engajamento em plataformas de streaming.</p>
+    <a href="link-do-dashboard-1" target="_blank">Ver projeto</a>
   </div>
-
-  <footer>
-    <p>© 2025 Ana Raquel Menezes | <a href="https://www.linkedin.com/in/ana-raquel-menezes" target="_blank">LinkedIn</a></p>
-  </footer>
-</body>
-</html>
+  <div class="card">
+    <img src="imagens/Controle Financeiro.jpg" alt="Controle Financeiro" class="card-img">
+    <h3>Controle Financeiro</h3>
+    <p>Exploração de dados financeiros e organização de despesas.</p>
+    <a href="link-do-dashboard-2" target="_blank">Ver projeto</a>
+  </div>
+  <div class="card">
+    <img src="imagens/DRE.jpg" alt="DRE" class="card-img">
+    <h3>DRE</h3>
+    <p>Relatório de Demonstração de Resultados consolidado.</p>
+    <a href="link-do-dashboard-3" target="_blank">Ver projeto</a>
+  </div>
+</div>
