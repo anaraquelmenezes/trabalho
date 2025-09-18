@@ -4,112 +4,83 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio - Ana Raquel Menezes</title>
-  
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
-  
-  <!-- Font Awesome para ícones -->
-  <script src="https://kit.fontawesome.com/a2d9d6a64c.js" crossorigin="anonymous"></script>
-
   <style>
     body {
       font-family: 'Lato', sans-serif;
-      background-color: #ECF0F1;
       margin: 0;
       padding: 0;
+      background-color: #ECF0F1;
       color: #2C3E50;
     }
-
     header {
       background-color: #2C3E50;
       color: white;
-      padding: 40px 20px;
+      padding: 2rem;
       text-align: center;
     }
-
     header h1 {
       font-family: 'Merriweather', serif;
       margin: 0;
+      font-size: 2.5rem;
     }
-
     header p {
-      margin-top: 10px;
-      font-size: 1.2em;
+      font-size: 1.2rem;
     }
-
-    main {
-      padding: 40px 20px;
+    .container {
+      padding: 2rem;
       text-align: center;
     }
-
     h2 {
       font-family: 'Merriweather', serif;
-      margin-bottom: 30px;
+      margin-bottom: 1.5rem;
     }
-
     .projects {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
     }
-
     .card {
       background: white;
+      padding: 1.5rem;
       border-radius: 8px;
-      padding: 20px;
-      width: 280px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      text-align: center;
-      transition: transform 0.3s;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
     }
-
     .card:hover {
       transform: translateY(-5px);
     }
-
     .card h3 {
       margin-top: 0;
-      color: #2C3E50;
       font-family: 'Merriweather', serif;
     }
-
     .card p {
-      font-size: 0.95em;
-      margin: 15px 0;
+      font-size: 0.95rem;
     }
-
     .card a {
       display: inline-block;
-      margin-top: 10px;
+      margin-top: 1rem;
       text-decoration: none;
       color: #2980B9;
       font-weight: bold;
-      transition: color 0.3s;
     }
-
     .card a:hover {
-      color: #1A5276;
+      text-decoration: underline;
     }
-
     footer {
       background-color: #2C3E50;
       color: white;
       text-align: center;
-      padding: 20px;
-      margin-top: 40px;
+      padding: 1rem;
+      margin-top: 2rem;
     }
-
     footer a {
       color: #2980B9;
-      margin: 0 10px;
-      font-size: 1.2em;
-      transition: color 0.3s;
       text-decoration: none;
+      font-weight: bold;
     }
-
     footer a:hover {
-      color: #1A5276;
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -119,7 +90,7 @@
     <p>Bem-vindo(a)! Aqui compartilho meus dashboards e projetos de análise de dados.</p>
   </header>
 
-  <main>
+  <div class="container">
     <h2>Projetos</h2>
     <div class="projects">
       <div class="card">
@@ -137,17 +108,26 @@
         <p>Insights sobre clientes e marketing.</p>
         <a href="link-do-dashboard-3" target="_blank">Ver projeto</a>
       </div>
+      <div class="card">
+        <h3>Dashboard 4</h3>
+        <p>Monitoramento de KPIs em tempo real.</p>
+        <a href="link-do-dashboard-4" target="_blank">Ver projeto</a>
+      </div>
+      <div class="card">
+        <h3>Dashboard 5</h3>
+        <p>Previsões e séries temporais.</p>
+        <a href="link-do-dashboard-5" target="_blank">Ver projeto</a>
+      </div>
+      <div class="card">
+        <h3>Dashboard 6</h3>
+        <p>Relatórios interativos de RH.</p>
+        <a href="link-do-dashboard-6" target="_blank">Ver projeto</a>
+      </div>
     </div>
-  </main>
+  </div>
 
   <footer>
-    <p>© 2025 Ana Raquel Menezes</p>
-    <a href="https://www.linkedin.com/in/ana-raquel-menezes" target="_blank">
-      <i class="fab fa-linkedin"></i> LinkedIn
-    </a>
-    <a href="https://github.com/anaraquelmenezes" target="_blank">
-      <i class="fab fa-github"></i> GitHub
-    </a>
+    <p>© 2025 Ana Raquel Menezes | <a href="https://www.linkedin.com/in/ana-raquel-menezes" target="_blank">LinkedIn</a></p>
   </footer>
 </body>
 </html>
