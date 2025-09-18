@@ -1,18 +1,87 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Ana Raquel Menezes</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Ana Raquel Menezes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+      color: #333;
+    }
+    header {
+      background: #4a4de7;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+    }
+    main {
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card h2 {
+      color: #4a4de7;
+      margin-bottom: 1rem;
+    }
+    .card a {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background: #4a4de7;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .card a:hover {
+      background: #3739b6;
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
 <body>
-    <h1>Bem-vindo ao meu Portfólio</h1>
-    <p>Aqui você encontrará meus dashboards e projetos de análise de dados.</p>
+  <header>
+    <h1>Portfólio - Ana Raquel Menezes</h1>
+    <p>Bem-vindo! Aqui estão meus projetos e dashboards de análise de dados 📊</p>
+  </header>
 
-    <h2>Projetos</h2>
-    <ul>
-        <li><a href="link-do-dashboard-1" target="_blank">Dashboard 1</a></li>
-        <li><a href="link-do-dashboard-2" target="_blank">Dashboard 2</a></li>
-    </ul>
-</body>
-</html>
+  <main>
+    <div class="card">
+      <h2>Dashboard 1</h2>
+      <p>Análise de vendas e desempenho comercial.</p>
+      <a href="link-do-dashboard-1" target="_blank">Ver Dashboard</a>
+    </div>
+    <div class="card">
+      <h2>Dashboard 2</h2>
+      <p>Insights de marketing e eng
+
