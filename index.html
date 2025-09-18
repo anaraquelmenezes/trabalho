@@ -4,84 +4,103 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio - Ana Raquel Menezes</title>
+  <!-- Estilo -->
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+      background: linear-gradient(135deg, #74ABE2, #5563DE);
       color: #333;
-    }
-    header {
-      background: #4a4de7;
-      color: white;
-      padding: 2rem;
       text-align: center;
     }
-    header h1 {
+
+    header {
+      padding: 40px 20px;
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+    }
+
+    h1 {
       margin: 0;
       font-size: 2.5rem;
     }
-    header p {
-      margin-top: 0.5rem;
+
+    p {
       font-size: 1.2rem;
     }
-    main {
-      padding: 2rem;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
+
+    section {
+      padding: 40px 20px;
     }
+
+    .card-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
     .card {
       background: white;
-      border-radius: 12px;
-      padding: 1.5rem;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+      width: 250px;
       text-align: center;
       transition: transform 0.2s;
     }
+
     .card:hover {
       transform: scale(1.05);
     }
-    .card h2 {
-      color: #4a4de7;
-      margin-bottom: 1rem;
-    }
+
     .card a {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.5rem 1rem;
-      background: #4a4de7;
-      color: white;
-      border-radius: 8px;
       text-decoration: none;
+      color: #5563DE;
       font-weight: bold;
     }
-    .card a:hover {
-      background: #3739b6;
-    }
+
     footer {
-      background: #222;
+      background: rgba(0,0,0,0.2);
       color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: white;
+      margin: 0 10px;
+      font-size: 1.5rem;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #FFD700;
     }
   </style>
+  <!-- Font Awesome para ícones -->
+  <script src="https://kit.fontawesome.com/a2d9d6a64c.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
   <header>
-    <h1>Portfólio - Ana Raquel Menezes</h1>
-    <p>Bem-vindo! Aqui estão meus projetos e dashboards de análise de dados 📊</p>
+    <h1>Ana Raquel Menezes</h1>
+    <p>Bem-vindo(a)! Aqui compartilho meus dashboards e projetos de análise de dados.</p>
   </header>
 
-  <main>
-    <div class="card">
-      <h2>Dashboard 1</h2>
-      <p>Análise de vendas e desempenho comercial.</p>
-      <a href="link-do-dashboard-1" target="_blank">Ver Dashboard</a>
-    </div>
-    <div class="card">
-      <h2>Dashboard 2</h2>
-      <p>Insights de marketing e eng
+  <section>
+    <h2>Projetos</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Dashboard 1</h3>
+        <p>Análise de vendas e performance.</p>
+        <a href="link-do-dashboard-1" target="_blank">Ver projeto</a>
+      </div>
+      <div class="card">
+        <h3>Dashboard 2</h3>
+        <p>Exploração de dados financeiros.</p>
+        <a href="link-do-dashboard-2" target="_blank">Ver projeto</_
+
 
