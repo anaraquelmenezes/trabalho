@@ -5,238 +5,135 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio - Ana Raquel Menezes</title>
   
-  <!-- Fontes -->
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+
   <style>
+    /* Estilos globais */
     body {
       font-family: 'Lato', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #ECF0F1;
-      color: #2C3E50;
-      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
     }
-
     h1, h2, h3 {
       font-family: 'Merriweather', serif;
+      color: #222;
     }
 
+    /* Cabeçalho */
     header {
-      background-color: #2C3E50;
+      background-color: #2f2f2f;
       color: white;
+      padding: 20px 0;
       text-align: center;
-      padding: 20px 10px;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
     }
-
-    header h1 {
-      margin: 0;
-      font-size: 32px;
-    }
-
-    nav {
-      margin-top: 10px;
-    }
-
     nav a {
-      color: white;
+      color: #0077cc;
       margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
     }
-
     nav a:hover {
-      color: #2980B9;
+      text-decoration: underline;
     }
 
-    main {
-      max-width: 1100px;
-      margin: 30px auto;
-      padding: 0 20px;
+    /* Seções */
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
     }
 
-    /* SOBRE MIM */
-    #sobre {
+    /* Sobre mim */
+    .sobre {
       display: flex;
       align-items: center;
-      gap: 30px;
-      background: linear-gradient(135deg, #ffffff, #f9fbfd);
-      padding: 40px;
-      border-radius: 15px;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-      margin-bottom: 40px;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
-
-    #sobre img {
-      width: 220px;
-      height: 220px;
+    .sobre img {
       border-radius: 50%;
-      object-fit: cover;
-      border: 5px solid #2980B9;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+      width: 150px;
+      margin-right: 20px;
+      border: 3px solid #0077cc;
     }
 
-    #sobre div {
-      flex: 1;
-    }
-
-    #sobre h2 {
-      font-size: 28px;
-      margin-bottom: 15px;
-      color: #2C3E50;
-    }
-
-    #sobre p {
-      font-size: 18px;
-      line-height: 1.6;
-    }
-
-    /* PROJETOS */
-    h2 {
-      text-align: center;
-      margin-bottom: 20px;
-      font-size: 26px;
-    }
-
-    .projetos {
+    /* Projetos */
+    .cards {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 20px;
-      margin-bottom: 50px;
+      margin-top: 20px;
     }
-
     .card {
       background: white;
-      border-radius: 10px;
       padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       text-align: center;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: transform 0.2s;
     }
-
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
     .card img {
       width: 100%;
       height: 160px;
       object-fit: cover;
       border-radius: 8px;
-      margin-bottom: 15px;
     }
-
-    .card h3 {
-      margin: 10px 0;
-      font-size: 20px;
-      color: #2C3E50;
-    }
-
-    .card p {
-      font-size: 15px;
-      margin-bottom: 15px;
-    }
-
-    .card a {
+    .btn {
       display: inline-block;
-      padding: 10px 15px;
-      background: #2980B9;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #0077cc;
       color: white;
+      border-radius: 5px;
       text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
+    }
+    .btn:hover {
+      background: #005fa3;
     }
 
-    .card a:hover {
-      background: #1f6391;
-    }
-
-    /* CONTATO */
-    #contato h2 {
-      margin-bottom: 20px;
-    }
-
+    /* Contato */
     form {
-      max-width: 600px;
-      margin: 0 auto 50px auto;
-      background: white;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
     }
-
-    form label {
-      display: block;
-      margin-bottom: 5px;
-      font-weight: bold;
-    }
-
     form input, form textarea {
-      width: 100%;
+      margin-bottom: 15px;
       padding: 10px;
-      margin-bottom: 15px;
-      border-radius: 6px;
       border: 1px solid #ccc;
-      font-size: 15px;
-      font-family: 'Lato', sans-serif;
+      border-radius: 5px;
     }
-
     form button {
-      background: #2980B9;
+      padding: 10px;
+      background: #0077cc;
       color: white;
-      padding: 12px 20px;
       border: none;
-      border-radius: 6px;
+      border-radius: 5px;
       cursor: pointer;
-      font-size: 16px;
-      font-weight: bold;
     }
-
     form button:hover {
-      background: #1f6391;
+      background: #005fa3;
     }
 
-    .success-message {
-      display: none;
-      text-align: center;
-      color: green;
-      margin-bottom: 15px;
-      font-weight: bold;
-    }
-
+    /* Rodapé */
     footer {
-      background-color: #2C3E50;
+      background-color: #2f2f2f;
       color: white;
       text-align: center;
-      padding: 15px;
+      padding: 15px 0;
     }
-
     footer a {
-      color: #2980B9;
+      color: #0077cc;
       text-decoration: none;
-      font-weight: bold;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-
-    /* RESPONSIVO */
-    @media (max-width: 768px) {
-      #sobre {
-        flex-direction: column;
-        text-align: center;
-      }
-      #sobre img {
-        margin-bottom: 20px;
-      }
     }
   </style>
 </head>
 <body>
+
+  <!-- Cabeçalho -->
   <header>
     <h1>Ana Raquel Menezes</h1>
     <nav>
@@ -246,98 +143,88 @@
     </nav>
   </header>
 
-  <main>
-    <!-- SOBRE MIM -->
-    <section id="sobre">
-      <img src="imagens/foto.jpg" alt="Foto de Ana Raquel Menezes">
+  <!-- Sobre mim -->
+  <section id="sobre">
+    <div class="sobre">
+      <img src="imagens/ana.jpg" alt="Foto de Ana Raquel Menezes">
       <div>
         <h2>Sobre mim</h2>
         <p>
-          Sou casada, mãe de cinco filhos e avó de quatro netinhos lindos. Tenho paixão pelo poder que o Excel oferece para transformar dados em análises estratégicas, capazes de apoiar decisões com clareza e eficiência.  
-          Neste portfólio, compartilho projetos que refletem minha dedicação e curiosidade em análise de dados.  
-          Além de apresentar meu trabalho, meu objetivo é também entregar soluções personalizadas e de qualidade para empresas e profissionais que buscam dashboards e relatórios sob medida.
+          Sou casada, mãe de cinco filhos e avó de quatro netinhos lindos. Tenho paixão pelo poder que o Excel 
+          oferece para transformar dados em análises estratégicas, capazes de apoiar decisões com clareza e eficiência. 
+          Neste portfólio, compartilho projetos que refletem minha dedicação e curiosidade em análise de dados. 
+          Além de apresentar meu trabalho, meu objetivo é também entregar soluções personalizadas e de qualidade 
+          para empresas e profissionais que buscam dashboards e relatórios sob medida.
         </p>
       </div>
-    </section>
-
-    <!-- PROJETOS -->
-    <section id="projetos">
-  <h2>Meus Projetos</h2>
-  <div class="cards">
-    
-    <!-- Card 1 -->
-    <div class="card">
-      <img src="imagens/streaming.png" alt="Dashboard de Streaming">
-      <h3>Dashboard de Streaming</h3>
-      <p>Dashboard em Excel sobre desempenho e engajamento em plataformas de streaming.</p>
-      <a href="https://youtu.be/Q5ciKvwLzPc" target="_blank" class="btn">Ver Projeto</a>
     </div>
+  </section>
 
-    <!-- Card 2 -->
-    <div class="card">
-      <img src="imagens/controle-financeiro.png" alt="Controle Financeiro">
-      <h3>Controle Financeiro</h3>
-      <p>Dashboard em Excel para acompanhar receitas, despesas e indicadores financeiros.</p>
-      <a href="https://youtu.be/9gHeMbSKYmg" target="_blank" class="btn">Ver Projeto</a>
+  <!-- Projetos -->
+  <section id="projetos">
+    <h2>Meus Projetos</h2>
+    <div class="cards">
+
+      <!-- Streaming -->
+      <div class="card">
+        <img src="imagens/streaming.png" alt="Dashboard de Streaming">
+        <h3>Dashboard de Streaming</h3>
+        <p>Dashboard em Excel sobre desempenho e engajamento em plataformas de streaming.</p>
+        <a href="https://youtu.be/Q5ciKvwLzPc" target="_blank" class="btn">Ver Projeto</a>
+      </div>
+
+      <!-- Controle Financeiro -->
+      <div class="card">
+        <img src="imagens/controle-financeiro.png" alt="Controle Financeiro">
+        <h3>Controle Financeiro</h3>
+        <p>Dashboard em Excel para acompanhar receitas, despesas e indicadores financeiros.</p>
+        <a href="https://youtu.be/9gHeMbSKYmg" target="_blank" class="btn">Ver Projeto</a>
+      </div>
+
+      <!-- DRE -->
+      <div class="card">
+        <img src="imagens/dre.png" alt="DRE">
+        <h3>DRE – Demonstração de Resultados</h3>
+        <p>Relatório interativo de Demonstração de Resultados (DRE) em Excel, consolidado e visual.</p>
+        <a href="https://youtu.be/99NzCLbhnBU" target="_blank" class="btn">Ver Projeto</a>
+      </div>
+
     </div>
+  </section>
 
-    <!-- Card 3 -->
-    <div class="card">
-      <img src="imagens/dre.png" alt="Demonstração de Resultados (DRE)">
-      <h3>DRE – Demonstração de Resultados</h3>
-      <p>Relatório interativo de Demonstração de Resultados (DRE) em Excel, consolidado e visual.</p>
-      <a href="https://youtu.be/99NzCLbhnBU" target="_blank" class="btn">Ver Projeto</a>
-    </div>
+  <!-- Contato -->
+  <section id="contato">
+    <h2>Contato</h2>
+    <form action="https://formspree.io/f/mzzalwby" method="POST">
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <textarea name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <p id="msg-sucesso" style="display:none; color:green; margin-top:10px;">Mensagem enviada com sucesso!</p>
+  </section>
 
-  </div>
-</section>
-
-
-    <!-- CONTATO -->
-    <section id="contato">
-      <h2>Entre em Contato</h2>
-      <form id="my-form" action="https://formspree.io/f/mzzalwby" method="POST">
-        <div class="success-message" id="success-message">
-          ✅ Obrigada! Sua mensagem foi enviada com sucesso.
-        </div>
-
-        <label for="name">Nome</label>
-        <input type="text" name="name" id="name" required>
-
-        <label for="email">E-mail</label>
-        <input type="email" name="email" id="email" required>
-
-        <label for="message">Mensagem</label>
-        <textarea name="message" id="message" rows="5" required></textarea>
-
-        <button type="submit">Enviar</button>
-      </form>
-    </section>
-  </main>
-
+  <!-- Rodapé -->
   <footer>
-    <p>© 2025 Ana Raquel Menezes | 
-      <a href="https://www.linkedin.com/in/ana-raquel-menezes" target="_blank">LinkedIn</a>
-    </p>
+    <p>© 2025 Ana Raquel Menezes</p>
+    <p><a href="https://www.linkedin.com/in/seu-linkedin" target="_blank">LinkedIn</a></p>
   </footer>
 
-  <!-- Script Formspree para exibir mensagem -->
   <script>
-    const form = document.getElementById("my-form");
-    const successMessage = document.getElementById("success-message");
+    // Exibe mensagem de sucesso no envio do formulário
+    const form = document.querySelector("form");
+    const msg = document.getElementById("msg-sucesso");
 
-    form.addEventListener("submit", async function(event) {
-      event.preventDefault();
-      const formData = new FormData(form);
-      const response = await fetch(form.action, {
-        method: form.method,
-        body: formData,
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+      fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
         headers: { 'Accept': 'application/json' }
-      });
-      if (response.ok) {
-        successMessage.style.display = "block";
+      }).then(() => {
+        msg.style.display = "block";
         form.reset();
-      }
+      });
     });
   </script>
 </body>
